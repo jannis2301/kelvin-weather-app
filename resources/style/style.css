@@ -1,0 +1,41 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 800px;
+  margin: 0;
+  padding: 0;
+  background-image: url(../../images/sunny-weather.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  margin: 40px 0 0 0;
+}
+
+.field-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.field-container p {
+  margin-right: 156px;
+}
+
+.kelvin-field label {
+  margin-right: 5px;
+}
