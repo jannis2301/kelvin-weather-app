@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="resources/style/style.css">
-  <title>Kelvin Weather</title>
-</head>
-<body>
-  <div class="wrapper">
-      <h1>Temperature Converter</h1>
-    <p>Type a value in the Kelvin field to convert the value to Fahrenheit:</p>
-    <div class="field-container">
-      <div class="kelvin-field">
-        <label for="inputKelvin">Kelvin:</label>
-        <input id="inputKelvin" type="number" placeholder="Insert temperature" oninput="temperatureConverter(this.value)"
-          onchange="temperatureConverter(this.value)">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resources/style/style.css">
+    <title>Kelvin Weather</title>
+  </head>
+  <body>
+      <div class="wrapper">
+        <h1>Temperature Converter</h1>
+        <p>Type a value in the Kelvin field to convert the value to Fahrenheit:</p>
+        <div class="field-container">
+          <div class="kelvin-field">
+            <label for="inputKelvin">Kelvin:</label>
+            <input id="inputKelvin" type="number" placeholder="Insert temperature" oninput="temperatureConverter(this.value)"
+              onchange="temperatureConverter(this.value)">
+          </div>
+          <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+        </div>
       </div>
-      <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
-  </div>
-</div>
-  
-</body>
-<script src="resources/js/app.js"></script>
+    <script src="resources/js/app.js"></script>
+  </body>
 </html>
